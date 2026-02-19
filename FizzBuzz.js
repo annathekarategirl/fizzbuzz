@@ -1,7 +1,11 @@
 // TODO: Define constants for the form and the result display area
-
+const numin=document.getElementById("numberinput");
+const result=document.getElementById("result");
 // TODO: Add the first line of the event listener to handle form submission
+numin.addEventListener("submit", function(){
+    console.log("erm yay")
 
+})
     // Prevent the form from refreshing the page
     event.preventDefault();
 
