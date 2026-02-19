@@ -1,13 +1,16 @@
 // TODO: Define constants for the form and the result display area
-const numin=document.getElementById("numberinput");
+const butin=document.getElementById("button1");
 const result=document.getElementById("result");
 // TODO: Add the first line of the event listener to handle form submission
-numin.addEventListener("submit", function(){
-    console.log("erm yay")
-
-})
-    // Prevent the form from refreshing the page
+butin.onclick=function(){
+    
     event.preventDefault();
+    let inputnum=document.getElementById("numberinput").value;
+    console.log(inputnum)
+    inputnum=Number(inputnum);
+    console.log(inputnum)}
+    // Prevent the form from refreshing the page
+    
 
 // TODO: Get the number from the form input
 
@@ -18,4 +21,4 @@ numin.addEventListener("submit", function(){
 // Otherwise, set the output to the number itself
 
 // Display the result on the page
-result.textContent = output;
+//result.textContent = output;
