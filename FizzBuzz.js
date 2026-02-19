@@ -9,19 +9,19 @@ butin.onclick=function(){
     
     inputnum=Number(inputnum);
     if(isNaN(inputnum)){
-        var output="Lock in"
+        var output="Lock in";
     }
     else if(inputnum%3==0 && inputnum%5==0){
-        var output="FizzBuzz"
+        var output="FizzBuzz";
     }
     else if(inputnum%3==0){
         var output="Fizz";
     }
     else if(inputnum%5==0){
-        var output="Buzz"
+        var output="Buzz";
     }
     else{
-        var output= inputnum
+        var output= inputnum;
     }
     result.textContent = output;
 }
