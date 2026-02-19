@@ -6,9 +6,25 @@ butin.onclick=function(){
     
     event.preventDefault();
     let inputnum=document.getElementById("numberinput").value;
-    console.log(inputnum)
+    
     inputnum=Number(inputnum);
-    console.log(inputnum)}
+    if(inputnum==NaN){
+        var output="Lock in"
+    }
+    else if(inputnum%3==0 && inputnum%5==0){
+        var output="FizzBuzz"
+    }
+    else if(inputnum%3==0){
+        var output="Fizz";
+    }
+    else if(inputnum%5==0){
+        var output="Buzz"
+    }
+    else{
+        var output= inputnum
+    }
+    result.textContent = output;
+}
     // Prevent the form from refreshing the page
     
 
@@ -21,4 +37,4 @@ butin.onclick=function(){
 // Otherwise, set the output to the number itself
 
 // Display the result on the page
-//result.textContent = output;
+
