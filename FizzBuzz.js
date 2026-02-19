@@ -8,7 +8,7 @@ butin.onclick=function(){
     let inputnum=document.getElementById("numberinput").value;
     
     inputnum=Number(inputnum);
-    if(inputnum==NaN){
+    if(isNaN(inputnum)){
         var output="Lock in"
     }
     else if(inputnum%3==0 && inputnum%5==0){
